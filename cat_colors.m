@@ -5,7 +5,6 @@ function C = cat_colors(palette,N)
 % cat_colors(palette)
 % cat_colors(palette,N)
 % C = cat_colors(___)
-% [~,ref] = cat_colors(___)
 %
 %INPUTS
 % palette :: {text} Name of color palette

@@ -2,7 +2,6 @@ function cb = cat_colorbar(C,labels,order)
 %Categorical colorbar
 %
 %SYNTAX
-% cat_colorbar(C)
 % cat_colorbar(C,labels)
 % cat_colorbar(C,labels,order)
 % cb = cat_colorbar(___)
