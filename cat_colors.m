@@ -17,19 +17,19 @@ function C = cat_colors(palette,N)
 %PALETTES
 % NAME        SIZE    REFERENCE
 % accent       8x3    Brewer (2004)
-% dark2        8x3    ibid.
+% dark         8x3    ibid.
 % paired      12x3    ibid.
-% pastel1      9x3    ibid.
+% pastel       9x3    ibid.
 % pastel2      8x3    ibid.
-% set1         9x3    ibid.
+% set          9x3    ibid.
 % set2         8x3    ibid.
 % set3        12x3    ibid.
 %
 % acton      100x3    Crameri et al. (2020)
 % bamako     100x3    ibid.
 % batlow     100x3    ibid.
-% batlowKS   100x3    ibid.
-% batlowWS   100x3    ibid.
+% batlowK    100x3    ibid.
+% batlowW    100x3    ibid.
 % bilbao     100x3    ibid.
 % buda       100x3    ibid.
 % davos      100x3    ibid.
@@ -42,12 +42,25 @@ function C = cat_colors(palette,N)
 % lapaz      100x3    ibid.
 % lipari     100x3    ibid.
 % navia      100x3    ibid.
-% naviaWS    100x3    ibid.
+% naviaW     100x3    ibid.
 % nuuk       100x3    ibid.
 % oslo       100x3    ibid.
 % tokyo      100x3    ibid.
 % turku      100x3    ibid.
 % 
+%
+%EXAMPLE
+% % Copy-paste this into the Command Window to view output
+%  rng(8)
+%  y1 = movmean(rand([1 100]),15);
+%  y2 = y1 + movmean(rand([1 100]),15)./2;
+%  y3 = y2 + movmean(rand([1 100]),15) - 0.2;
+%  Y = [y1' y2' y3'];
+%  figure(1)
+%  plot(Y,'LineWidth',2)
+%  C = cat_colors('dark');
+%  colororder(C)
+%
 %
 %REFERENCES
 % Brewer, C. M. (2004). Colorbrewer2. https://colorbrewer2.org/
@@ -107,7 +120,7 @@ switch palette
         user_palette = categorical_palettes.devonS;
     case {'glasgowS','glasgow'}
         user_palette = categorical_palettes.glasgowS;
-    case {'grayCS','gray'}
+    case {'grayCS','gray','grayC'}
         user_palette = categorical_palettes.grayCS;
     case {'hawaiiS','hawaii'}
         user_palette = categorical_palettes.hawaiiS;

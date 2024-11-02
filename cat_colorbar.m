@@ -14,6 +14,18 @@ function cb = cat_colorbar(C,labels,order)
 %OUTPUTS
 % cb :: {colorbar} Handle to colorbar object
 %
+%
+%EXAMPLE
+% % Copy-paste this into the Command Window to see output
+%  rng(8)
+%  Y = abs(rand([1 5])*10);
+%  figure(1)
+%  barh(1,Y,'grouped')
+%  yticklabels([]), set(gca,'TickDir','none')
+%  co=colororder(cat_colors('set2'));
+%  labels = {'Y1','Y2','Y3','Y4','Y5'};
+%  cb=cat_colorbar(co,labels,false);
+%
 %See also
 % cat_colors
 
