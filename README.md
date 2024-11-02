@@ -1,4 +1,7 @@
 # Categorical Colors
+
+[![View my project on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/174825) [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/fileexchange/v1?id=174825&file=examples.mlx)
+
 Work with categorical color palettes in MATLAB.
 
 <img src="Images/all-categorical-color-palettes-large.png" width=700>
