@@ -11,7 +11,7 @@ There are many color palettes that can be found on the MATLAB File Exchange; how
 Categorical Colors provides MATLAB users with quick and easy access to dozens of popular categorical color palettes, including the publication-worthy palettes by Cynthia Brewer and Fabio Crameri.
 
 ### Key Features
-* Choose from 30 unique categorical color palettes.
+* Choose from 36 unique categorical color palettes.
 * Access any of the color palettes using the `cat_colors` function.
 * Add a categorical colorbar to figures, with labels, using the `cat_colorbar` function.
 

@@ -47,6 +47,13 @@ function C = cat_colors(palette,N)
 % oslo       100x3    ibid.
 % tokyo      100x3    ibid.
 % turku      100x3    ibid.
+%
+% bold        10x3    Liu (2024)
+% colorblind   6x3    ibid.    
+% prism       10x3    ibid.
+% tab         10x3    ibid.
+% tab20       20x3    ibid.
+% vivid       10x3    ibid.
 % 
 %
 %EXAMPLE
@@ -67,6 +74,9 @@ function C = cat_colors(palette,N)
 % Crameri, F., Shephard, G. E., & Heron, P. J. (2020). The misuse of colour
 %   in science communication. Nature Communications, 11(1), 5444. 
 %   https://doi.org/10.1038/s41467-020-19160-7
+% Liu, Z. (2024). 200 colormap. MATLAB Central File Exchange. 
+%   https://mathworks.com/matlabcentral/fileexchange/120088. Retrieved 
+%   November 2, 2024.
 %
 %See also
 % cat_colorbar
@@ -144,6 +154,21 @@ switch palette
         user_palette = categorical_palettes.tokyoS;
     case {'turkuS','turku'}
         user_palette = categorical_palettes.turkuS;
+    % ================================================================== %
+    % Other color palettes from Liu (2024)
+    % ================================================================== %
+    case 'bold'
+        user_palette = categorical_palettes.bold;
+    case 'colorblind'
+        user_palette = categorical_palettes.colorblind;
+    case {'prism2','prism'}
+        user_palette = categorical_palettes.prism2;
+    case {'tab','tab10'}
+        user_palette = categorical_palettes.tab10;
+    case 'tab20'
+        user_palette = categorical_palettes.tab20;
+    case 'vivid'
+        user_palette = categorical_palettes.vivid;
     % ================================================================== %
     % Dracula color palette (Easter egg, not documented)
     % ================================================================== %
