@@ -49,7 +49,7 @@ function C = cat_colors(palette,N)
 % turku      100x3    ibid.
 %
 % bold        10x3    Liu (2024)
-% colorblind   6x3    Wong (2011)   
+% colorblind   8x3    Wong (2011)   
 % prism       10x3    Liu (2024)
 % tab         10x3    ibid.
 % tab20       20x3    ibid.
